@@ -1,193 +1,382 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TheBox</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TheBox Landing Page</title>
 
-  <body>
-    <header class="navbar">
-      <div class="logo">
-        <img src="logo.png" alt="" />
-        <span>TheBox</span>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="tbx-header">
+    <div class="tbx-container">
+      <div class="tbx-nav-wrap">
+        <a href="#" class="tbx-brand">
+          <div class="tbx-brand-mark">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <span class="tbx-brand-text">TheBox</span>
+        </a>
+
+        <nav class="tbx-nav">
+          <a href="#hero">Home</a>
+          <a href="#about">About Us</a>
+          <a href="#projects">Projects</a>
+          <a href="#services">Services</a>
+          <a href="#contact" class="tbx-nav-active">Contact Us</a>
+        </nav>
+
+        <button class="tbx-menu-btn">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="tbx-hero" id="hero">
+    <div class="tbx-hero-overlay"></div>
+    <div class="tbx-container tbx-hero-inner">
+      <div class="tbx-hero-copy">
+        <h1>Building things<br>is our mission.</h1>
       </div>
 
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a class="contact" href="#">Contact Us</a></li>
-        </ul>
-      </nav>
-    </header>
-
-    <section class="hero">
-      <div class="hero-text">
-        <h1>Building things<br />is our mission.</h1>
-      </div>
-
-      <div class="project-card">
-        <div class="card-top">
-          <p>Feature Projects</p>
-          <h3>The National University of Architecture</h3>
+      <div class="tbx-hero-card">
+        <div class="tbx-hero-card-top">
+          <h4>Feature Projects</h4>
+          <p>The National University of Architecture</p>
         </div>
 
-        <div class="card-bottom">
-          <span>← Back</span>
-          <span>Next →</span>
+        <div class="tbx-hero-card-bottom">
+          <button><i class="fa-solid fa-arrow-left-long"></i> Back</button>
+          <button>Next <i class="fa-solid fa-arrow-right-long"></i></button>
         </div>
       </div>
-    </section>
-    <section class="reputation">
-      <h2>Our Reputation</h2>
+    </div>
+  </section>
 
-      <div class="reputation-cards">
-        <div class="card">
-          <img src="icon1.png" alt="" />
+  <!-- Reasons -->
+  <section class="tbx-reasons" id="reasons">
+    <div class="tbx-container">
+      <h2 class="tbx-section-title tbx-center">Our Reputation</h2>
+
+      <div class="tbx-reasons-grid">
+        <article class="tbx-reason-box">
+          <div class="tbx-reason-icon">
+            <i class="fa-solid fa-headset"></i>
+          </div>
           <h3>Best Services</h3>
           <p>Nullam senectus porttitor in eget. Eget rutrum leo interdum.</p>
-        </div>
+        </article>
 
-        <div class="card">
-          <img src="icon2.png" alt="" />
+        <article class="tbx-reason-box">
+          <div class="tbx-reason-icon">
+            <i class="fa-solid fa-headset"></i>
+          </div>
           <h3>Best Teams</h3>
           <p>Cursus semper tellus volutpat aliquet lacus.</p>
-        </div>
+        </article>
 
-        <div class="card">
-          <img src="icon3.png" alt="" />
+        <article class="tbx-reason-box">
+          <div class="tbx-reason-icon">
+            <i class="fa-solid fa-ruler-combined"></i>
+          </div>
           <h3>Best Designs</h3>
           <p>Ultricies at ipsum nunc, tristique nam lectus.</p>
-        </div>
+        </article>
       </div>
-    </section>
-
-    <!-- About Section -->
-
-    <section class="about">
-      <div class="about-container">
-        <div class="about-image">
-          <img src="man.jpg" alt="" />
-        </div>
-
-        <div class="about-card">
-          <h2>About us</h2>
-
-          <p>
-            For more than 30 years we have been delivering world-class
-            construction and we've built many lasting relationships along the
-            way.
-          </p>
-
-          <p>
-            We've matured into an industry leader and trusted resource for those
-            seeking quality, innovation and reliability when building in the
-            U.S.
-          </p>
-
-          <button>More on Our History</button>
-        </div>
-      </div>
-    </section>
-
-    <section class="promo-banner">
-    <div class="promo-overlay">
-        <div class="promo-inner">
-            <div class="promo-copy">
-                <h2>Free consultation with exceptional quality</h2>
-                <p>Just one call away: +84 1102 2703</p>
-            </div>
-
-            <div class="promo-action">
-                <a href="#" class="promo-link">Get your consultation</a>
-            </div>
-        </div>
     </div>
-</section>
+  </section>
 
-<section class="projects">
+  <!-- About us -->
+  <section class="tbx-about" id="about">
+    <div class="tbx-container">
+      <div class="tbx-about-stage">
+        <div class="tbx-about-photo">
+          <img src="./unsplash_6anudmpILw4.png" alt="About company">
+        </div>
 
-<div class="projects-container">
+        <div class="tbx-about-card">
+          <h2>About us</h2>
+          <p>
+            For more than 30 years we have been delivering world-class construction
+            and we’ve built many lasting relationships along the way.
+          </p>
+          <p>
+            We’ve matured into an industry leader and trusted resource for those seeking
+            quality, innovation and reliability when building in the U.S.
+          </p>
+          <a href="#" class="tbx-light-btn">More on Our History</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<div class="projects-left">
+  <!-- Services -->
+  <section class="tbx-services" id="services">
+    <div class="tbx-container">
+      <h2 class="tbx-section-title tbx-center">Services</h2>
 
-<h2>Projects</h2>
+      <div class="tbx-services-grid">
+        <article class="tbx-service-card tbx-service-light">
+          <div class="tbx-service-icon"><i class="fa-solid fa-building"></i></div>
+          <span class="tbx-service-line"></span>
+          <h3>Construction</h3>
+        </article>
 
-<ul class="projects-filter">
-<li class="active">All</li>
-<li>Commercial</li>
-<li>Residential</li>
-<li>Other</li>
-</ul>
+        <article class="tbx-service-card tbx-service-blue">
+          <div class="tbx-service-icon"><i class="fa-solid fa-chart-line"></i></div>
+          <span class="tbx-service-line"></span>
+          <h3>Renovation</h3>
+        </article>
 
-</div>
+        <article class="tbx-service-card tbx-service-light">
+          <div class="tbx-service-icon"><i class="fa-solid fa-wrench"></i></div>
+          <span class="tbx-service-line"></span>
+          <h3>Consultation</h3>
+        </article>
 
+        <article class="tbx-service-card tbx-service-blue">
+          <div class="tbx-service-icon"><i class="fa-solid fa-briefcase"></i></div>
+          <span class="tbx-service-line"></span>
+          <h3>Repair Services</h3>
+        </article>
 
-<div class="projects-right">
+        <article class="tbx-service-card tbx-service-light">
+          <div class="tbx-service-icon"><i class="fa-solid fa-compass-drafting"></i></div>
+          <span class="tbx-service-line"></span>
+          <h3>Architecture</h3>
+        </article>
 
-<div class="projects-grid">
+        <article class="tbx-service-card tbx-service-blue">
+          <div class="tbx-service-icon"><i class="fa-solid fa-plug-circle-bolt"></i></div>
+          <span class="tbx-service-line"></span>
+          <h3>Electric</h3>
+        </article>
+      </div>
+    </div>
+  </section>
 
-<div class="project-card">
-<img src="img1.jpg" alt="">
-<div class="project-info">
-<h4>Wildstone Infra Hotel</h4>
-<p>2715 Ash Dr. San Jose, South Dakota</p>
-</div>
-</div>
+  <!-- Stats -->
+  <section class="tbx-stats" id="stats">
+    <div class="tbx-container">
+      <div class="tbx-stats-wrap">
 
+        <div class="tbx-stats-cards">
+          <article class="tbx-stat-card tbx-stat-card-a">
+            <div class="tbx-floating-icon tbx-icon-a">📝</div>
+            <h3>123</h3>
+            <p><span></span>Projects Completed</p>
+          </article>
 
-<div class="project-card">
-<img src="img2.jpg" alt="">
-<div class="project-info">
-<h4>Wish Stone Building</h4>
-<p>2972 Westheimer Rd. Santa Ana, Illinois</p>
-</div>
-</div>
+          <article class="tbx-stat-card tbx-stat-card-b">
+            <div class="tbx-floating-icon tbx-icon-b">🤝</div>
+            <h3>84</h3>
+            <p><span></span>Happy Clients</p>
+          </article>
 
+          <article class="tbx-stat-card tbx-stat-card-c">
+            <div class="tbx-floating-icon tbx-icon-c">🏆</div>
+            <h3>37</h3>
+            <p><span></span>Awards Win</p>
+          </article>
 
-<div class="project-card">
-<img src="img3.jpg" alt="">
-<div class="project-info">
-<h4>Mr. Parkinson’s House</h4>
-<p>3517 W. Gray St. Utica, Pennsylvania</p>
-</div>
-</div>
+          <article class="tbx-stat-card tbx-stat-card-d">
+            <div class="tbx-floating-icon tbx-icon-d">📐</div>
+            <h3>30</h3>
+            <p><span></span>Years in Business</p>
+          </article>
+        </div>
 
+        <div class="tbx-stats-copy">
+          <h2>30 Years<br>Experience</h2>
+          <p>
+            Our company has been the leading provided construction services to clients
+            throughout the USA since 1988.
+          </p>
+          <a href="#contact" class="tbx-main-btn">Contact Us</a>
+        </div>
 
-<div class="project-card">
-<img src="img4.jpg" alt="">
-<div class="project-info">
-<h4>Oregano Height</h4>
-<p>2464 Royal Ln. Mesa, New Jersey</p>
-</div>
-</div>
+      </div>
+    </div>
+  </section>
 
-</div>
+  <!-- Ads -->
+  <section class="tbx-banner">
+    <div class="tbx-banner-dark"></div>
+    <div class="tbx-container tbx-banner-inner">
+      <div class="tbx-banner-copy">
+        <h2>Free consultation with exceptional quality</h2>
+        <p>Just one call away: <a href="tel:+8411022703">+84 1102 2703</a></p>
+      </div>
 
+      <a href="#contact" class="tbx-banner-btn">Get your consultation</a>
+    </div>
+  </section>
 
-<div class="projects-navigation">
+  <!-- Projects -->
+  <section class="tbx-projects" id="projects">
+    <div class="tbx-container">
+      <h2 class="tbx-section-title">Projects</h2>
 
-<button class="back">← Back</button>
+      <div class="tbx-projects-layout">
+        <aside class="tbx-projects-filter">
+          <button class="tbx-filter-current">All</button>
+          <button>Commercial</button>
+          <button>Residential</button>
+          <button>Other</button>
+        </aside>
 
-<div class="dots">
-<span class="active-dot"></span>
-<span></span>
-<span></span>
-<span></span>
-</div>
+        <div class="tbx-projects-content">
+          <div class="tbx-project-grid">
+            <article class="tbx-project-card">
+              <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=900&q=80" alt="Project 1">
+              <div class="tbx-project-info">
+                <h3>Wildstone Infra Hotel</h3>
+                <p>2715 Ash Dr. San Jose, South Dakota</p>
+              </div>
+            </article>
 
-<button class="next">Next →</button>
+            <article class="tbx-project-card">
+              <img src="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?auto=format&fit=crop&w=900&q=80" alt="Project 2">
+              <div class="tbx-project-info">
+                <h3>Wish Stone Building</h3>
+                <p>2972 Westheimer Rd. Santa Ana, Illinois</p>
+              </div>
+            </article>
 
-</div>
+            <article class="tbx-project-card">
+              <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=900&q=80" alt="Project 3">
+              <div class="tbx-project-info">
+                <h3>Mr. Parkinston’s House</h3>
+                <p>3517 W. Gray St. Utica, Pennsylvania</p>
+              </div>
+            </article>
 
-</div>
+            <article class="tbx-project-card">
+              <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=900&q=80" alt="Project 4">
+              <div class="tbx-project-info">
+                <h3>Oregano Height</h3>
+                <p>2464 Royal Ln. Mesa, New Jersey</p>
+              </div>
+            </article>
+          </div>
 
-</div>
+          <div class="tbx-project-controls">
+            <button class="tbx-project-nav"><i class="fa-solid fa-arrow-left-long"></i> Back</button>
 
-</section>
-  </body>
+            <div class="tbx-dots">
+              <span class="tbx-dot tbx-dot-active"></span>
+              <span class="tbx-dot"></span>
+              <span class="tbx-dot"></span>
+              <span class="tbx-dot"></span>
+              <span class="tbx-dot"></span>
+            </div>
+
+            <button class="tbx-project-nav">Next <i class="fa-solid fa-arrow-right-long"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="tbx-cta" id="contact">
+    <div class="tbx-container">
+      <div class="tbx-cta-box">
+        <h2>What can us do for you?</h2>
+        <p>
+          We are ready to work on a project of any complexity,<br>
+          whether it’s commercial or residential.
+        </p>
+
+        <form class="tbx-form">
+          <div class="tbx-form-row">
+            <input type="text" placeholder="Your Name*" />
+            <input type="email" placeholder="Email*" />
+          </div>
+
+          <div class="tbx-form-row">
+            <div class="tbx-select-wrap">
+              <select>
+                <option>Reason for Contacting*</option>
+                <option>Consultation</option>
+                <option>Construction</option>
+                <option>Renovation</option>
+              </select>
+            </div>
+            <input type="text" placeholder="Phone" />
+          </div>
+
+          <textarea placeholder="Message"></textarea>
+          <span class="tbx-form-note"><strong>*</strong> indicates a required field</span>
+
+          <button type="submit" class="tbx-main-btn tbx-submit-btn">Submit</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bottom -->
+  <section class="tbx-bottom">
+    <div class="tbx-container">
+      <div class="tbx-bottom-grid">
+        <div class="tbx-bottom-left">
+          <p><span>Address:</span> 6391 Elgin St. Celina, Delaware 10299</p>
+          <p><span>Phone:</span> +84 1102 2703</p>
+          <p><span>Email:</span> hello@thebox.com</p>
+
+          <a href="#" class="tbx-brand tbx-bottom-brand">
+            <div class="tbx-brand-mark">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <span class="tbx-brand-text">TheBox</span>
+          </a>
+        </div>
+
+        <div class="tbx-bottom-right">
+          <div class="tbx-newsletter">
+            <h4>Newsletter:</h4>
+            <form class="tbx-news-form">
+              <input type="email" placeholder="Your email here" />
+              <button type="submit">Subscribe</button>
+            </form>
+          </div>
+
+          <div class="tbx-socials">
+            <h4>Social:</h4>
+            <div class="tbx-social-list">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="tbx-footer">
+    <div class="tbx-container">
+      <p>TheBox Company © 2022. All Rights Reserved</p>
+    </div>
+  </footer>
+
+</body>
 </html>
